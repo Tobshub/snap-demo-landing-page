@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="./script.js" defer type="module"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="menu">
+    <div id="menu-background"></div>
+    <div id="menu-content">
+      <img src="./images/icon-close-menu.svg" alt="close-menu" id="menu-close">
+      <div class="menu-item">
+        <span class="dropdown-selector">Features</span>
+        <div class="menu-dropdown">
+          <span><a href="#"><img src="./images/icon-todo.svg" alt="icon-todo"> Todo List</a></span>
+          <span><a href="#"><img src="./images/icon-calendar.svg" alt="icon-calendar"> Calendar</a></span>
+          <span><a href="#"><img src="./images/icon-reminders.svg" alt="icon-reminders"> Reminders</a></span>
+          <span><a href="#"><img src="./images/icon-planning.svg" alt="icon-planning"> Planning</a></span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span class="dropdown-selector">Company</span>
+        <div class="menu-dropdown">
+          <span><a href="#">History</a></span>
+          <span><a href="#">Our Team</a></span>
+          <span><a href="#">Blog</a></span>
+        </div>
+      </div>
+      <div class="menu-item"><a href="#">Careers</a></div>
+      <div class="menu-item"><a href="#">About</a></div>
+      <div class="sign in"><a href="#">Login</a></div>
+      <div class="sign up"><a href="#">Register</a></div>
+    </div>
+  </section>
+  <header>
+    <div id="logo"></div>
+    <div id="menu-button"></div>
+  </header>
+  <main>
+    <div class='landing-page-background'></div>
+    <div class="main-content">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      
+    </div>
+  </main>
+  <footer>
+    <div><img src="./images/client-databiz.svg" alt=""></div>
+    <div><img src="./images/client-audiophile.svg" alt=""></div>
+    <div><img src="./images/client-meet.svg" alt=""></div>
+    <div><img src="./images/client-maker.svg" alt=""></div>
+  </footer>
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Tobshub">Tobani Esan-George</a>.
+  </div> -->
+</body>
+</html>
