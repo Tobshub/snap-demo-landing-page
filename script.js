@@ -50,6 +50,40 @@ let hover_menu_items = document.querySelectorAll('.dropdown-items');
     })
 
 
+    hover_menu[0].addEventListener('keypress',(e)=>{
+      if(e.code!='Enter') return;
+      if(!hover_menu[0].classList.contains('dropup')){
+        hover_menu_items[0].style.height = 'max-content';
+        hover_menu_items[0].style.padding = '10px';
+        hover_menu[0].classList.remove('dropdown');
+        hover_menu[0].classList.add('dropup');
+       }
+       else if(hover_menu[0].classList.contains('dropup')){
+        hover_menu_items[0].style.height = '0';
+        hover_menu_items[0].style.padding = '0';
+        hover_menu[0].classList.remove('dropup');
+        hover_menu[0].classList.add('dropdown');
+       }
+    })
+
+    hover_menu[1].addEventListener('keypress',(e)=>{
+      if(e.code!='Enter') return;
+      if(!hover_menu[1].classList.contains('dropup')){
+        hover_menu_items[1].style.height = 'max-content';
+        hover_menu_items[1].style.padding = '10px';
+        hover_menu[1].classList.remove('dropdown');
+        hover_menu[1].classList.add('dropup');
+       }
+       else if(hover_menu[1].classList.contains('dropup')){
+        hover_menu_items[1].style.height = '0';
+        hover_menu_items[1].style.padding = '0';
+        hover_menu[1].classList.remove('dropup');
+        hover_menu[1].classList.add('dropdown');
+       }
+    })
+
+
+
 
 let dropdowns = document.querySelectorAll('.dropdown-selector');
 let dropdown_content = document.querySelectorAll('.menu-dropdown');

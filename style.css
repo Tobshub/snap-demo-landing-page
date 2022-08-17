@@ -245,7 +245,7 @@ body {
     width: max-content;
     height: max-content;
   }
-  .navbar-item:hover {
+  .navbar-item:hover, .navbar-item:focus {
     color: var(--neutral-color-10);
   }
   .dropdown {
@@ -296,7 +296,7 @@ body {
     text-decoration: none;
     color: var(--neutral-color-40);
   }
-  .dropdown-items a:hover {
+  .dropdown-items a:hover, .dropdown-items a:focus {
     color: var(--neutral-color-10);
   }
 
@@ -309,7 +309,7 @@ body {
     width: fit-content;
     height: fit-content;
   }
-  .navbutton:hover {
+  .navbutton:hover, .navbutton:focus {
     color: var(--neutral-color-10);
     border-color: var(--neutral-color-10);
   }
@@ -366,7 +366,7 @@ body {
     text-align: center;
     margin-top: 40px;
   }
-  .main-content>button:hover{
+  .main-content>button:hover, .main-content>button:focus{
     background-color: var(--neutral-color-100);
     color: var(--neutral-color-10);
     border: 1px solid var(--neutral-color-10);
