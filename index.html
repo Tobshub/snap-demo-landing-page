@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <script src="./script.js" defer type="module"></script>
+  <script src="./script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,86 +15,53 @@
   </style>
 </head>
 <body>
-  <section class="menu">
-    <div id="menu-background"></div>
-    <div id="menu-content">
-      <img src="./images/icon-close-menu.svg" alt="close-menu" id="menu-close">
-      <div class="menu-item">
-        <span class="dropdown-selector">Features</span>
-        <div class="menu-dropdown">
-          <span><a href="#"><img src="./images/icon-todo.svg" alt="icon-todo"> Todo List</a></span>
-          <span><a href="#"><img src="./images/icon-calendar.svg" alt="icon-calendar"> Calendar</a></span>
-          <span><a href="#"><img src="./images/icon-reminders.svg" alt="icon-reminders"> Reminders</a></span>
-          <span><a href="#"><img src="./images/icon-planning.svg" alt="icon-planning"> Planning</a></span>
-        </div>
-      </div>
-      <div class="menu-item">
-        <span class="dropdown-selector">Company</span>
-        <div class="menu-dropdown">
-          <span><a href="#">History</a></span>
-          <span><a href="#">Our Team</a></span>
-          <span><a href="#">Blog</a></span>
-        </div>
-      </div>
-      <div class="menu-item"><a href="#">Careers</a></div>
-      <div class="menu-item"><a href="#">About</a></div>
-      <div class="sign in"><a href="#">Login</a></div>
-      <div class="sign up"><a href="#">Register</a></div>
-    </div>
-  </section>
   <header>
-    <div id="logo"></div>
-    <div id="menu-button"></div>
+    <img src="./images/logo.svg" id="logo" />
+    <img src="./images/icon-menu.svg" id="open-menu" />
+    <nav id="nav-bar">
+      <div class="nav-blur-effect"></div>
+      <div class="nav-content">
+        <img src="./images/icon-close-menu.svg" id="close-menu" />
+        <div class="nav-item">Features <img src="./images/icon-arrow-down.svg" />
+        <div class="dropdown">
+          <span><a href="#"><img src="./images/icon-todo.svg" /> Todo list</a></span>
+          <span><a href="#"><img src="./images/icon-calendar.svg" /> Calendar</a></span>
+          <span><a href="#"><img src="./images/icon-reminders.svg" /> Reminders</a></span>
+          <span><a href="#"><img src="./images/icon-planning.svg" /> Planning</a></span>
+        </div>
+        </div>
+        <div class="nav-item">Company <img src="./images/icon-arrow-down.svg" />
+          <div class="dropdown">
+            <span><a href="#">History</a></span>
+            <span><a href="#">Our Team</a></span>
+            <span><a href="#">Blog</a></span>
+          </div>
+        </div>
+        <div class="nav-item"><a href="#">Careers</a></div>
+        <div class="nav-item"><a href="#">About</a></div>
+
+        <div class="nav-buttons">
+          <span id="login"><a href="#">Login</a></span>
+          <span id="register"><a href="#">Register</a></span>
+        </div>
+      </div>
+    </nav>
   </header>
-  <section class="navbar">
-    <div class="nav-left">
-      <span class="navbar-item dropdown" tabindex="1">Features
-        <div class="dropdown-items">
-          <span><a href="#" tabindex="2"><img src="./images/icon-todo.svg" alt=""> Todo List</a></span>
-          <span><a href="#" tabindex="3"><img src="./images/icon-calendar.svg" alt=""> Calendar</a></span>
-          <span><a href="#" tabindex="4"><img src="./images/icon-reminders.svg" alt=""> Reminders</a></span>
-          <span><a href="#" tabindex="5"><img src="./images/icon-planning.svg" alt=""> Planning</a></span>
-        </div>
-      </span>
-      <span class="navbar-item dropdown" tabindex="6">Company
-        <div class="dropdown-items">
-          <span><a href="#" tabindex="7">History</a></span>
-          <span><a href="#" tabindex="8">Our Team</a></span>
-          <span><a href="#" tabindex="9">Blog</a></span>
-        </div>
-      </span>
-      <span class="navbar-item" tabindex="10">Careers</span>
-      <span class="navbar-item" tabindex="11">About</span>
-    </div>
-    <div class="nav-right">
-      <span class="navbutton login" tabindex="12">Login</span>
-      <span class="navbutton register" tabindex="13">Register</span>
-    </div>
-    <!-- 
-      Features: Todo list, Calender, Reminders, Planning
-      Company: History, Our Team, Blog
-      Careers
-      About
-      Login
-      Register -->
-  </section>
+   
   <main>
-    <div class='landing-page-background'></div>
     <div class="main-content">
-      <h1>Make remote work</h1>
-      <p>Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.</p>
-      <button tabindex="14">Learn more</button>
-      
+      <h1 class="main-header">Make remote work</h1>
+      <p class="main-description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+    </div>
+    <div class="main-image">
     </div>
   </main>
-  <footer>
-    <div><img src="./images/client-databiz.svg" alt=""></div>
-    <div><img src="./images/client-audiophile.svg" alt=""></div>
-    <div><img src="./images/client-meet.svg" alt=""></div>
-    <div><img src="./images/client-maker.svg" alt=""></div>
-  </footer>
-  
+ 
+ 
+  <!-- 
+    Make remote work
+    Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+   -->
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
