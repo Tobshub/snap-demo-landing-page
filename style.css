@@ -180,7 +180,7 @@ body {
         color: var(--neutral-color-40);
         position: relative;
     }
-    a:hover {
+    a:hover, a:focus {
         color: var(--neutral-color-10);
     }
     .nav-item {
@@ -221,7 +221,7 @@ body {
         outline: 1px solid var(--neutral-color-40);
         border-radius: 10px;
     }
-    #register:hover{
+    #register:hover, #register:focus{
         outline-color: var(--neutral-color-10);
     }
     #register>a {
@@ -259,7 +259,7 @@ body {
         border-radius: 10px;
         transition: 300ms ease-out;
     }
-    #learn-more:hover {
+    #learn-more:hover, #learn-more:focus {
         color: var(--neutral-color-40);
         border-color: var(--neutral-color-40);
         background-color: var(--neutral-color-90);
