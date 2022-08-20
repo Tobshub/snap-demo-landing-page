@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <script src="./script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,13 +15,13 @@
 </head>
 <body>
   <header>
-    <img src="./images/logo.svg" id="logo" />
+    <img src="./images/logo.svg" id="logo" width="84" height="27" />
     <img src="./images/icon-menu.svg" id="open-menu" />
     <nav id="nav-bar">
       <div class="nav-blur-effect"></div>
       <div class="nav-content">
         <img src="./images/icon-close-menu.svg" id="close-menu" />
-        <div class="nav-item">Features <img src="./images/icon-arrow-down.svg" />
+        <div class="nav-item"><a href="#" id="features-nav">Features <img src="./images/icon-arrow-down.svg" class="dropdown-arrow" /></a>
         <div class="dropdown">
           <span><a href="#"><img src="./images/icon-todo.svg" /> Todo list</a></span>
           <span><a href="#"><img src="./images/icon-calendar.svg" /> Calendar</a></span>
@@ -30,7 +29,7 @@
           <span><a href="#"><img src="./images/icon-planning.svg" /> Planning</a></span>
         </div>
         </div>
-        <div class="nav-item">Company <img src="./images/icon-arrow-down.svg" />
+        <div class="nav-item"><a href="#" id="company-nav">Company <img src="./images/icon-arrow-down.svg" class="dropdown-arrow" /> </a>
           <div class="dropdown">
             <span><a href="#">History</a></span>
             <span><a href="#">Our Team</a></span>
@@ -51,21 +50,27 @@
   <main>
     <div class="main-content">
       <h1 class="main-header">Make remote work</h1>
-      <p class="main-description">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <p class="main-body">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button id="learn-more">Learn more</button>
+      <div class="sponsors">
+        <img src="./images/client-databiz.svg" alt="client-databiz">
+        <img src="./images/client-audiophile.svg" alt="client-audiophile">
+        <img src="./images/client-meet.svg" alt="client-meet">
+        <img src="./images/client-maker.svg" alt="client-maker">
+        
+      </div>
     </div>
     <div class="main-image">
     </div>
   </main>
  
  
-  <!-- 
-    Make remote work
-    Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
-   -->
-  
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Tobshub">Tobani Esan-George</a>.
   </div> -->
+
+  <script src="./script.js"></script>
+
 </body>
 </html>
