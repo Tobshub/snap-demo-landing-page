@@ -368,7 +368,7 @@ body {
         width: 40%;
         height: fit-content;
         padding: 5vh 0 0;
-        position: absolute;
+        position: relative;
     }
     .main-header {
         margin: 0;
