@@ -9,27 +9,30 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { 
+      font-size: 11px; text-align: center;
+      position: absolute; bottom: 0; 
+    }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
   <header>
-    <img src="./images/logo.svg" id="logo" width="84" height="27" />
-    <img src="./images/icon-menu.svg" id="open-menu" />
+    <img src="./images/logo.svg" id="logo" width="84" height="27" alt="logo" />
+    <img src="./images/icon-menu.svg" id="open-menu" alt="open-menu" />
     <nav id="nav-bar">
       <div class="nav-blur-effect"></div>
       <div class="nav-content">
         <img src="./images/icon-close-menu.svg" id="close-menu" />
-        <div class="nav-item"><a href="#" id="features-nav">Features <img src="./images/icon-arrow-down.svg" class="dropdown-arrow" /></a>
+        <div class="nav-item"><a href="#" id="features-nav">Features <img src="./images/icon-arrow-down.svg" class="dropdown-arrow"  alt="dropdown-icon"/></a>
         <div class="dropdown">
-          <span><a href="#"><img src="./images/icon-todo.svg" /> Todo list</a></span>
-          <span><a href="#"><img src="./images/icon-calendar.svg" /> Calendar</a></span>
-          <span><a href="#"><img src="./images/icon-reminders.svg" /> Reminders</a></span>
-          <span><a href="#"><img src="./images/icon-planning.svg" /> Planning</a></span>
+          <span><a href="#"><img src="./images/icon-todo.svg" alt="icon todo" /> Todo list</a></span>
+          <span><a href="#"><img src="./images/icon-calendar.svg" alt="icon calendar" /> Calendar</a></span>
+          <span><a href="#"><img src="./images/icon-reminders.svg" alt="icon reminer" /> Reminders</a></span>
+          <span><a href="#"><img src="./images/icon-planning.svg" alt="icon planning" /> Planning</a></span>
         </div>
         </div>
-        <div class="nav-item"><a href="#" id="company-nav">Company <img src="./images/icon-arrow-down.svg" class="dropdown-arrow" /> </a>
+        <div class="nav-item"><a href="#" id="company-nav">Company <img src="./images/icon-arrow-down.svg" class="dropdown-arrow" alt="dropdown-icon"/> </a>
           <div class="dropdown">
             <span><a href="#">History</a></span>
             <span><a href="#">Our Team</a></span>
@@ -65,10 +68,10 @@
   </main>
  
  
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Tobshub">Tobani Esan-George</a>.
-  </div> -->
+  </div>
 
   <script src="./script.js"></script>
 
