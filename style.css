@@ -365,19 +365,20 @@ body {
         justify-content: space-between;
     }
     .main-content {
-        width: 40%;
+        width: 50%;
         height: fit-content;
         padding: 5vh 0 0;
     }
     .main-header {
         margin: 0;
-        font-size: 4.5rem;
+        font-size: 5rem; padding-right: 3rem;
         color: var(--neutral-color-10);
+        font-weight: 700;
     }
     .main-body {
-        font-size: 1.1rem; line-height: 1.35rem;
+        font-size: 1.2rem; line-height: 1.7rem;
         color: var(--neutral-color-40);
-        padding-right: 1rem;
+        padding-right: 5rem;
         margin: 8vh 0 8vh;
     }
     #learn-more {
@@ -409,7 +410,7 @@ body {
         background-image: url('./images/image-hero-desktop.png');
         background-size: contain;
         background-repeat: no-repeat;
-        height: 78vh;
+        height: 100%;
         width: 49%;
         margin-right: 3.5vh;
     }
